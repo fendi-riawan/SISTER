@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['SekolahDasar/get_data']['GET'] = 'SekolahdasarController/get_SekolahDasar';
+
+$route['default_controller'] = 'welcome';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
