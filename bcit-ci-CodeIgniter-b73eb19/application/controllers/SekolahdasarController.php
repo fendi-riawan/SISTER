@@ -15,7 +15,7 @@ class SekolahdasarController extends CI_Controller
 	public function response($data)
 	{
 		$this->output 
-					->set_content_type('bcit-ci-CodeIgniter-b73eb19/json')
+					->set_content_type('application/json') // Content Type ini sebenernya udah ada di library CI, jadi kalau content type nya gak sesuai, hasilnya lain
 					->set_output(json_encode($data))
 					->_display();
 		exit;			
