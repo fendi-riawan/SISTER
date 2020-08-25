@@ -23,7 +23,7 @@ class SekolahdasarController extends CI_Controller
 
 	public function get_SekolahDasar()
 	{
-		$data = $this->SekolahdasarController->get_SekolahDasar();
+		$data = $this->SekolahdasarModel->get_SekolahDasar();
 
 		return $this->response([
 			"error"		=> false,
